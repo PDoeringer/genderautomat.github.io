@@ -1,0 +1,169 @@
+html{
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    height: 1000px;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+/* == Header Bereich == */
+
+    /*Navigation*/
+.header_Leiste{
+    width: 100%;
+    background-color: darkgray;
+    padding-left: 10%;
+}
+
+.nav_Leiste{
+    width: 100%;
+    height: 50px;
+}
+
+.nav_Leiste > ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 2rem;
+    height: 100%;
+}
+
+.nav_Leiste > ul > li{
+    display: inline-block;
+    height: 100%;
+    padding: 0 .2rem 0 .4rem;
+}
+
+.nav_Leiste > ul > li > a {
+    margin-top: .75rem;
+    display: inline-block;
+}
+
+.nav_Leiste > ul > li > a:link{
+    color: rgb(216, 66, 141);
+    text-decoration: none;
+}
+
+.nav_Leiste > ul > li > a:hover{
+    color: rgb(216, 66, 141);
+    text-decoration: none;
+}
+
+.nav_Leiste > ul > li > a:active{
+    color: rgb(216, 66, 141);
+    text-decoration: none;
+}
+
+.nav_Leiste > ul > li > a:visited{
+    color: rgb(216, 66, 141);
+    text-decoration: none;
+}
+
+.active {
+    background-color: aliceblue;
+}
+
+
+
+
+
+
+/* == Menuebereich == */
+.menuebereich{
+    width: 9%;
+    background-color: rgb(130, 43, 43, .5);
+    position: fixed;
+    margin-top: 0;
+    padding-top: 1rem;
+}
+
+@media (max-width: 1200px){
+    .menuebereich{
+        position:relative;
+        width: 100%;
+    }
+}
+
+
+
+/* == Anleitungen == */
+
+.continer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10%;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*='col-'] {
+    float: left;
+    min-height: 1px;
+    padding: .8rem;
+}
+
+.col-2{width: 33.333%;}
+
+@media (max-width: 768px){
+    .col-2{width: 100%;}
+}
+
+
+
+
+/* == text gendern box == */
+.text_gendern{
+    margin-left: 10%;
+}
+
+/* Eingabetext */
+#eingabetext {
+    width: 80%;
+    height: 400px;
+    background-color: rgb(239, 239, 239);
+    border-style: solid;
+	border-width: 2px;
+}
+
+#eingabetext > h3{
+    margin-left: 40%;
+}
+
+#eingabetext > textarea{
+    width: 100%;
+    height: 85%;
+    border-style: solid;
+	border-width: 2px;
+}
+
+
+/* Ausgabetext */
+#ausgabefeld {
+    margin-right: 10%;
+    background-color: aliceblue;
+}
+
+/* Ausgabe Button */
+#convert_Text_Button {
+    margin-left: 38%;
+}
+
+@media (max-width: 768px){
+    #convert_Text_Button {
+        margin-top: 20px;
+    }
+}

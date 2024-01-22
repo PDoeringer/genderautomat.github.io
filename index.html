@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Gender-Automat</title>
+        <link rel="icon" type="image/png" href="src/imges/Logo.png">
+        <link rel="stylesheet" type="text/css" href="src/css/external_css.css">
+    </head>
+
+
+    <body>
+        <!-- Header Bereich -->
+        <header class="header_Leiste">
+
+            <!-- Navigation -->
+            <nav class="nav_Leiste">
+
+                <ul>
+                    <li><a href="index.html" class="active">Startseite</a></li>
+                    <li><a href="Web2.html">Web2</a></li>
+                    <li><a href="Web3.html">Web3</a></li>
+                </ul>
+                
+            </nav>
+
+            <!-- Content -->
+            <div>
+                <p>Was bieten wir an? <br> Hier können Sie einen ungegenderten Text gendern. Unten befinden sich drei fiktive Anleitungen, die Sie zum Ausprobieren einmal gendern lassen können. </p>
+            </div>
+
+            <!-- Footerbereich -->
+            <footer>
+                <p>Rechtliche Hinweise...</p>
+            </footer>
+
+        </header>
+
+        <!-- Menuebereich -->
+        <menu class="menuebereich">
+            <li><a href="index.html" class="active">Startseite</a></li>
+            <li><a href="Web2.html">Web2</a></li>
+            <li><a href="Web3.html">Web3</a></li>
+        </menu>
+
+
+
+
+        <!-- Anleitungen -->
+
+        <div class="continer">
+            <div class="row">
+                <div class="col-2">Um einen Termin bei einem Arzt zu bekommen, rufen Sie bei dem Arzt an. Der Sekretär wird mit Ihnen dann einen Termin mit dem Arzt vereinbaren.</div>
+                <div class="col-2">Wenn Sie die Seite als Hacker hacken wollen, kann der Hacker probieren, Code zu injizieren wie console.log("Hackt").</div>
+                <div class="col-2">Bevor Sie eine Tomatensauce kochen wollen, müssen Sie als Koch die Tomaten schneiden. Danach schüttet der Koch die Tomaten in einen Topf und kocht diese.</div>
+            </div>
+        </div>
+
+
+
+
+        <!-- text gendern box -->
+        <div class="text_gendern">
+            <!-- Eingabetext -->
+            <div id="eingabetext">
+                <h3>Geben Sie hier Ihren Text ein</h3>
+                <textarea name="text Feld" cols="20" rows="10" id="eingabefeld">
+                    
+                </textarea>
+            </div>
+
+            <!-- Ausgabe Button -->
+            <button type="button" id="convert_Text_Button" onclick="convert_text()">Text gendern</button> 
+
+            <!-- Ausgabetext -->
+            <p id="ausgabefeld"></p>
+        </div>
+
+
+        
+
+
+
+
+        <script type="text/javascript" src="src/javascript/external_java_script.js"></script> 
+        
+    </body>
+
+
+
+</html>
